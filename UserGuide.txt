@@ -1,0 +1,24 @@
+User Guide
+
+1)Set Property file application.properties for values
+inputfile.name
+csvfile.path
+
+for example
+inputfile.name=Input.txt
+csvfile.path=c://demo//report.csv
+
+2)File is created to location mentioned in csvfile.path
+
+3)Url to create csv file 
+  http://localhost:9000/currency-exchange/readinput
+4)Each record is combination of 
+Header
+Client_Information
+Product_Information
+Total_Transaction_Amount
+Client information is combination of (CLIENT TYPE, CLIENT NUMBER, ACCOUNT NUMBER, SUBACCOUNT NUMBER)
+
+Product information is combination of 
+EXCHANGE CODE, PRODUCT GROUP CODE, SYMBOL, EXPIRATION DATE
+4) total amount=sum (QUANTITY LONG, QUANTITY SHORT) for each unique product per client for particular transaction date

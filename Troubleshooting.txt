@@ -1,0 +1,12 @@
+Troubleshooting
+
+1)Check if properties are set in application.properties
+     inputfile.name
+  csvfile.path
+for an example
+inputfile.name=Input.txt
+csvfile.path=c://demo//report.csv
+
+2)Check if directory exits for output file mentioned in property  csvfile.path
+3)Check if enough privileges for reading and writing – check unit test
+4) Check logs
